@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply btn bg-primary-600 hover:bg-primary-700 text-white border-none;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-gray-200 hover:bg-gray-300 text-gray-800 border-none;
+  }
+  
+  .card-primary {
+    @apply card bg-white shadow-lg border border-gray-200;
+  }
+  
+  .input-primary {
+    @apply input input-bordered w-full focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500;
+  }
+  
+  .textarea-primary {
+    @apply textarea textarea-bordered w-full focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500;
+  }
+  
+  .select-primary {
+    @apply select select-bordered w-full focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500;
+  }
+}
